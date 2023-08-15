@@ -1,0 +1,70 @@
+@import './fonts';
+@import './colors';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    &__position {
+        position: relative;
+    }
+}
+
+.show {
+    display: block;
+    animation-name: show_animate;
+    animation-duration: 1s;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@keyframes show_animate {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@import './blocks/promo';
+@import './blocks/header';
+@import './blocks/advantages';
+@import './blocks/slider';
+@import './blocks/kinds';
+@import './blocks/slider2';
+@import './blocks/contacts';
+@import './blocks/footer';
+@import './blocks/modal';

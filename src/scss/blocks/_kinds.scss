@@ -1,0 +1,129 @@
+.kinds {
+    padding: 70px 0 80px 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__flex {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 470px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 88px;
+        color: var(--black);
+    }
+    &__line {
+        width: 108px;
+        height: 2px;
+        background-color: var(--light_brown);
+        position: relative;
+        left: -50px;
+    }
+    &__descr {
+        font-weight: 400;
+        color: var(--dark_grey);
+        font-size: 16px;
+        line-height: 32px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kinds {
+        padding: 50px 0 45px 0;
+        &__img {
+            width: 500px;
+            img {
+                width: 100%;
+            }
+        }
+        &__text {
+            width: 435px
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .kinds {
+        padding: 50px 0 45px 0;
+        &__img {
+            width: 350px;
+            img {
+                width: 100%;
+            }
+        }
+        &__text {
+            width: 340px;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 65px;
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 25px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .kinds {
+        padding: 25px 0 35px 0;
+        &__text {
+            width: 260px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 50px;
+        }
+        &__descr {
+            font-size: 13px;
+            line-height: 20px;
+        }
+        &__img {
+            width: 255px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .kinds {
+        padding: 15px 0 20px 0;
+        &__flex {
+            flex-direction: column;
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+            }
+        }
+        &__text {
+            width: 320px;
+        }
+        &__img {
+            margin-top: 20px;
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .kinds {
+        &__text {
+            width: 310px;
+        }
+        &__img {
+            margin-top: 20px;
+            width: 310px;
+        }
+    }
+}

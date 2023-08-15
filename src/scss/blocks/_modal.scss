@@ -1,0 +1,70 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-rgba);
+    &__block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 5px;
+    }
+    &__close {
+        position: absolute;
+        top: -18px;
+        right: -40px;
+        font-size: 35px;
+        color: var(--white);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        &-none {
+            display: none;
+        }
+    }
+    &__input {
+        display: block;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        background: var(--white);
+        box-shadow: 0 4px 15px var(--box-shadow);
+        border: none;
+        font-size: 17px;
+        text-align: center;
+        padding: 0 20px;
+        outline: none;
+    }
+    &__btn {
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        background: var(--dark_blue);
+        box-shadow: 0 4px 15px var(--box-shadow);
+        color: var(--white);
+        border: none;
+        font-size: 17px;
+        text-align: center;
+        padding: 0 20px;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            background-color: var(--box-shadow);
+            color: var(--dark_blue);
+        }
+    }
+    &__title {
+        font-weight: 700;
+    }
+}

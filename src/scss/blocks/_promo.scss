@@ -1,0 +1,124 @@
+.promo {
+    height: 100vh;
+    background: url('../img/main_bg.jpg') center center / cover no-repeat;
+    padding-top: 220px;
+    &__descr {
+        color: var(--white);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &__title {
+        color: var(--white);
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 88px;
+        margin-top: 20px;
+    }
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__btn {
+        background-color: var(--dark_blue);
+        color: var(--white);
+        width: 270px;
+        height: 100px;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        transition: all 0.3s;
+        &:hover {
+            background-color: var(--white);
+            color: var(--dark_blue);
+        }
+    }
+    &__socials {
+        width: 265px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        &__descr {
+            font-size: 23px;
+        }
+        &__title {
+            font-size: 60px;
+            line-height: 75px;
+        }
+        &__btn {
+            width: 240px;
+            height: 80px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .promo {
+        padding-top: 180px;
+        &__descr {
+            font-size: 22px;
+        }
+        &__title {
+            font-size: 46px;
+            line-height: 70px;
+        }
+        &__btn {
+            width: 220px;
+            height: 75px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        padding-top: 200px;
+        &__descr {
+            font-size: 20px;
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 50px;
+        }
+        &__flex {
+            flex-direction: column;
+        }
+        &__socials {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        padding-top: 185px;
+        &__descr {
+            font-size: 19px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .promo {
+        padding-top: 165px;
+        &__descr {
+            font-size: 17px;
+        }
+        &__title {
+            font-size: 28px;
+        }
+        &__btn {
+            width: 200px;
+            height: 70px;
+        }
+    }
+}

@@ -1,0 +1,191 @@
+.header {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__list {
+        list-style-type: none;
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        &-link {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        &-img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        &-link {
+            a {
+                color: var(--white);
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__iconLogo {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        top: 45px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        top: 30px;
+        &__flex {
+            position: fixed;
+            height: 100vh;
+            width: 50%;
+            background: var(--black);
+            left: -100%;
+            top: 0;
+            flex-direction: column;
+            justify-content: center;
+            transition: all .5s;
+            &-active {
+                left: 0;
+            }
+        }
+        &__logo {
+            width: 220px;
+            img {
+                width: 100%;
+            }
+        }
+        &__list {
+            margin: 35px 0;
+            width: 150px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            &-link {
+                display: block;
+                padding: 8px;
+                font-size: 17px;
+            }
+        }
+        &__iconLogo {
+            display: block;
+            width: 220px;
+            img {
+                width: 100%;
+            }
+        }
+        &__hamburger {
+            position: relative;
+            z-index: 1;
+            top: -50px;
+            left: 685px;
+            border: 2px solid var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33px;
+            height: 33px;
+            border-radius: 4px;
+            transition: .5s all;
+            cursor: pointer;
+            &-block {
+                width: 18px;
+                height: 14px;
+            }
+            span {
+                display: block;
+                height: 0.1rem;
+                border-radius: 2px;
+                width: 100%;
+                margin-bottom: 4px;
+                background-color: var(--white);
+                transition: .5s all;
+            }
+            &-active {
+                border: 2px solid rgba($color: #000000, $alpha: 0);
+                span {
+                    &:nth-child(1) {
+                        transform: translateY(6px) rotate(-45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(0px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__hamburger {
+            left: 505px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        top: 15px;
+        &__iconLogo {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img {
+                width: 200px;
+            }
+        }
+        &__hamburger {
+            left: 1px;
+            top: -40px;
+        }
+        &__flex {
+            width: 70%;
+            left: 100%;
+            &-active {
+               left: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        &__iconLogo {
+            img {
+                width: 180px;
+            }
+        }
+        &__logo {
+            width: 200px;
+        }
+    }
+}

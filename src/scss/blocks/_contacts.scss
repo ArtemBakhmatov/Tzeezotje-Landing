@@ -1,0 +1,306 @@
+.contacts {
+    padding-top: 215px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 88px;
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        &-block {
+            margin-top: 35px;
+            display: flex;
+            align-items: center;
+        }
+        &-img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: var(--light_brown);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+        }
+        &-descr {
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--dark_grey);
+            font-style: normal;
+            span {
+                display: block;
+                font-weight: 500;
+                font-size: 24px;
+                color: var(--black)
+            }
+        }
+    }
+    &__img {
+        margin-top: 50px;
+    }
+    &__right {
+        &-text {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 88px;
+        }
+        &-form {
+            width: 670px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-flex {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        &-block {
+            width: 320px;
+        }
+        &-label {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: var(--black);
+        }
+        &-input {
+            display: block;
+            width: 100%;
+            height: 80px;
+            padding: 15px;
+            outline: none;
+            border: 1px solid #CCCCCC;
+        }
+        &-textarea {
+            margin-top: 10px;
+            width: 100%;
+            height: 125px;
+            outline: none;
+            resize: none;
+            border: 1px solid #CCCCCC;
+            padding: 28px 16px;
+        }
+        &-btn {
+            margin-top: 20px;
+            width: 270px;
+            height: 100px;
+            background-color: var(--dark_blue);
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 24px;
+            color: var(--white);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .contacts {
+        &__title {
+            font-size: 44px;
+            line-height: 80px;
+        }
+        &__img {
+            width: 960px;
+            img {
+                width: 100%;
+            }
+        }
+        &__right {
+            &-text {
+                font-size: 44px;
+                line-height: 80px;
+            }
+            &-form {
+                width: 550px;
+            }
+            &-block {
+                width: 265px;
+            }
+            &-input {
+                height: 65px;
+            }
+            &-btn {
+                width: 240px;
+                height: 80px;
+            }
+            &-textarea {
+                margin-top: 3px;
+            }
+        }
+        &__address {
+            &-block {
+                margin-top: 30px;
+            }
+            &-img {
+                width: 60px;
+                height: 60px;
+            }
+            &-descr {
+                font-size: 15px;
+                span {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+        &__img {
+            width: 720px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        &__right {
+            &-form {
+                width: 400px;
+                margin-top: 20px;
+            }
+            &-text {
+                font-size: 36px;
+                line-height: 40px;
+            }
+            &-label {
+                font-size: 15px;
+            }
+            &-block {
+                width: 195px;
+            }
+            &-input {
+                height: 50px;
+                font-size: 13px;
+                padding: 10px;
+            }
+            &-textarea {
+                padding: 10px 10px;
+                font-size: 13px;
+            }
+            &-btn {
+                width: 220px;
+                height: 75px;
+            }
+        }
+        &__address {
+            &-img {
+                width: 55px;
+                height: 55px;
+                margin-right: 10px;
+            }
+            &-descr {
+                font-size: 14px;
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        &__img {
+            width: 540px;
+        }
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__right {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts {
+        padding-top: 135px;
+        &__img {
+            width: 100%;
+            margin: 30px auto 0 auto;
+        }
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__right {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__address {
+            &-block {
+                margin-top: 25px;
+            }
+            &-img {
+                width: 50px;
+                height: 50px;
+            }
+            &-descr {
+                font-size: 13px;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .contacts {
+        &__title {
+            font-size: 38px;
+            line-height: 30px;
+        }
+        &__right {
+            &-form {
+                width: 370px;
+                margin: 20px auto 0 auto;
+            }
+            &-text {
+                font-size: 31px;
+                line-height: 24px;
+            }
+            &-block {
+                width: 180px;
+            }
+            &-label {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px)  {
+    .contacts {
+        padding-top: 100px;
+        &__right {
+            &-form {
+                width: 315px;
+            }
+            &-flex {
+                flex-direction: column;
+            }
+            &-block {
+                width: 315px;
+                &:last-child {
+                    margin-top: 20px;
+                }
+            }
+            &-btn {
+                width: 200px;
+                height: 70px;
+                margin: 20px auto 0 auto;
+            }
+            &-text {
+                font-size: 28px;
+            }
+        }
+    }
+}
